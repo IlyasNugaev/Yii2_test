@@ -21,7 +21,6 @@ class CryptocurrenciesController extends Controller
      */
     public function actionUpdate(CryptocurrencyUpdateServiceInterface $updateService): array
     {
-        dd(Yii::$app->coinApiKey);
         if (Yii::$app->request->isPut) {
             $updateService->handler();
 
